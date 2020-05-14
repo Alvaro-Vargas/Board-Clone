@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MdAdd } from 'react-icons/md';
+import { MdMoreHoriz } from 'react-icons/md';
 
 import Card from '../Card';
 
@@ -11,11 +11,7 @@ function List({ data, index: listIndex }) {
     <Container done={data.done}>
       <header>
         <h2>{data.title}</h2>
-        {data.creatable && (
-          <button type="button">
-            <MdAdd size={24} color="#FFF" />
-          </button>
-        )}
+        <MdMoreHoriz />
       </header>
 
       <ul>
